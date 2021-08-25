@@ -23,15 +23,14 @@ const ResetPasswordScreen = () => {
                 }}/>
 
 
-<View style={{flexDirection:'row', width: '50%', alignItems:'center', justifyContent:'space-around',}}>
+            <View style={{flexDirection: 'row', width: '50%', alignItems: 'center', justifyContent: 'space-around',}}>
 
 
-
-            <TextButton activeOpacity={1} type={"primary"} title={"Don't have an account?   "}/>
-            <TextButton type={"secondary"} title={"  Sign Up"} onPress={() => {
-                console.log("pressed")
-            }}/>
-</View>
+                <TextButton activeOpacity={1} type={"primary"} title={"Don't have an account?   "}/>
+                <TextButton type={"secondary"} title={"  Sign Up"} onPress={() => {
+                    console.log("pressed")
+                }}/>
+            </View>
         </View>
     );
 };
