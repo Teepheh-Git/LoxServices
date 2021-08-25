@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        // marginVertical:15,
         top: 40,
         fontSize: SIZES.body2,
         fontWeight: '700'

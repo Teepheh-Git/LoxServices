@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        // marginVertical:15,
         top: 40,
         fontSize: SIZES.body2,
         fontWeight: '700'
@@ -27,10 +26,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         width: SIZES.W * 0.9,
-        // bottom: 50,
-        // backgroundColor: 'green',
-
-
     },
     noButton: {
         height: SIZES.buttonHeight,
@@ -38,7 +33,6 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.white,
         borderColor: COLORS.black,
         borderWidth: 1,
-        // marginHorizontal: SIZES.padding,
         justifyContent: 'center',
         alignItems: 'center',
         bottom: SIZES.bottom,
