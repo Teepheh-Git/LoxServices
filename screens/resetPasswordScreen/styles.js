@@ -15,6 +15,12 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.black,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    root: {
+        flexDirection: 'row',
+        width: '50%',
+        alignItems: 'center',
+        justifyContent: 'space-around'
     }
 
 })

@@ -23,7 +23,7 @@ const ResetPasswordScreen = () => {
                 }}/>
 
 
-            <View style={{flexDirection: 'row', width: '50%', alignItems: 'center', justifyContent: 'space-around',}}>
+            <View style={styles.root}>
 
 
                 <TextButton activeOpacity={1} type={"primary"} title={"Don't have an account?   "}/>
