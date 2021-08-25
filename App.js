@@ -7,13 +7,16 @@ import TextButton from "./components/textButton";
 import LoginScreen from "./screens/loginScreen";
 import SignUpScreen from "./screens/signUpScreen";
 import ResetPasswordScreen from "./screens/resetPasswordScreen";
+import StartTaskScreen from "./screens/startTaskScreen";
+import EndTaskScreen from "./screens/endTaskScreen";
+import SuccessScreen from "./screens/successScreen";
 
 export default function App() {
     return (
         <View style={styles.container}>
 
-
-            <ResetPasswordScreen/>
+            <SuccessScreen
+            />
 
             <StatusBar style="auto"/>
         </View>
