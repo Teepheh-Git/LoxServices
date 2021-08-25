@@ -8,28 +8,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    orText: {
-        color: COLORS.gray,
-        fontWeight: '700',
-        marginVertical: SIZES.padding,
-    },
-    loginButton: {
+    resetButton: {
         height: SIZES.buttonHeight,
         width: SIZES.buttonWidth,
-        backgroundColor: COLORS.red,
         borderRadius: SIZES.radius,
-        justifyContent: 'center',
-        alignItems: 'center',
-        top: SIZES.top,
-    },
-    signUpButton: {
-        height: SIZES.buttonHeight,
-        width: SIZES.buttonWidth,
         backgroundColor: COLORS.black,
-        marginVertical: SIZES.padding,
         justifyContent: 'center',
         alignItems: 'center',
-        bottom: SIZES.bottom,
     }
 
 })

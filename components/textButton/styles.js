@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
 
     container: {
         width: SIZES.W,
-        padding: SIZES.padding,
         justifyContent:'center',
         alignItems:'center',
     },

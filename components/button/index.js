@@ -9,7 +9,6 @@ const Button = (props) => {
     const backGroundColor = type === 'primary' ? COLORS.black : COLORS.white;
     const textColor = type === 'primary' ? COLORS.white : COLORS.black;
 
-
     return (
         <View style={styles.container}>
             <TouchableOpacity

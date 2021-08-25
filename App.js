@@ -5,6 +5,8 @@ import Button from './components/button'
 import TextField from "./components/textInput";
 import TextButton from "./components/textButton";
 import LoginScreen from "./screens/loginScreen";
+import SignUpScreen from "./screens/signUpScreen";
+import ResetPasswordScreen from "./screens/resetPasswordScreen";
 
 export default function App() {
   return (
@@ -12,7 +14,7 @@ export default function App() {
 
 
 
-<LoginScreen/>
+<ResetPasswordScreen />
 
       <StatusBar style="auto" />
     </View>

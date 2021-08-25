@@ -3,9 +3,9 @@ import {Text, TouchableOpacity, View} from "react-native";
 import styles from "./styles"
 import {COLORS} from "../../constants";
 
-const TextButton = (props) => {
+const TextButton = (prop) => {
 
-    const {onPress, title, type} = props
+    const {onPress, title, type, ...props} = prop
 
 
     const textColor = type === 'primary' ? COLORS.gray : COLORS.red
@@ -16,8 +16,8 @@ const TextButton = (props) => {
 
             <TouchableOpacity
                 onPress={onPress}
-                activeOpacity={0.6}>
-
+                activeOpacity={0.6}
+                {...props}>
 
                 <Text style={[styles.text, {color: textColor}]}>{title}</Text>
 
