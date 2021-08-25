@@ -11,12 +11,13 @@ import StartTaskScreen from "./screens/startTaskScreen";
 import EndTaskScreen from "./screens/endTaskScreen";
 import SuccessScreen from "./screens/successScreen";
 import TotalAmountScreen from "./screens/totalAmountScreen";
+import WelcomeScreen from "./screens/welcomeScreen";
 
 export default function App() {
     return (
         <View style={styles.container}>
 
-            <TotalAmountScreen
+            <WelcomeScreen
             />
 
             <StatusBar style="auto"/>

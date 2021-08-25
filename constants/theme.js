@@ -43,6 +43,8 @@ export const SIZES = {
     // app dimensions
     W, H
 };
+
+
 export const FONTS = {
     header: {fontFamily: "Roboto-Black", fontSize: SIZES.header},
     buttonFont2: {fontFamily: "Roboto-Black", fontSize: SIZES.buttonText2, lineHeight: 18.75},
