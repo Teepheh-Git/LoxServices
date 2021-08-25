@@ -3,10 +3,10 @@ import styles from './styles'
 import {TextInput, View} from "react-native";
 import {COLORS} from "../../constants";
 
-const TextField = (props) => {
+const TextField = (prop) => {
 
 
-    const {placeholder, keyboardType} = props
+    const {placeholder, keyboardType, ...props} = prop
 
     const [focus, setFocus]=useState(true)
 
@@ -18,9 +18,10 @@ const TextField = (props) => {
                 placeholder={placeholder}
                 placeholderTextColor={COLORS.gray}
                 keyboardType={keyboardType}
-                maxLength={13}
                 textAlign={"left"}
-                style={styles.textInput}/>
+                style={styles.textInput}
+                {...props}
+            />
 
 
         </View>

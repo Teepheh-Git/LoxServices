@@ -6,6 +6,9 @@ const styles = StyleSheet.create({
     container: {
         width: SIZES.W,
         padding: SIZES.padding,
+        justifyContent:'center',
+        alignItems:'center',
+
 
     },
     button: {
@@ -15,7 +18,13 @@ const styles = StyleSheet.create({
         borderWidth: SIZES.borderWidth,
         borderColor: COLORS.black,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        elevation:5,
+        shadowColor: COLORS.black,
+        shadowOffset:{ height: 9},
+        shadowOpacity: 0.3,
+
+
     },
     text: {
         fontSize: SIZES.buttonText2,

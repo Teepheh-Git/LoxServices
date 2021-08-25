@@ -35,6 +35,10 @@ export const SIZES = {
     body: 14,
     body2: 22,
     inputTitle: 9,
+    top:5,
+    bottom:20,
+    left:20,
+    right:20,
 
     // app dimensions
     W, H
@@ -43,6 +47,7 @@ export const FONTS = {
     header: {fontFamily: "Roboto-Black", fontSize: SIZES.header},
     buttonFont2: {fontFamily: "Roboto-Black", fontSize: SIZES.buttonText2, lineHeight: 18.75},
     textInputFont: {fontFamily: "Roboto-Black", fontSize: SIZES.body, lineHeight: 16.41},
+    textButtonFont: {fontFamily: "Roboto-Black", fontSize: SIZES.buttonText, lineHeight: 16.41},
     h2: {fontFamily: "Roboto-Bold", fontSize: SIZES.h2, lineHeight: 30},
     h3: {fontFamily: "Roboto-Bold", fontSize: SIZES.h3, lineHeight: 22},
     h4: {fontFamily: "Roboto-Bold", fontSize: SIZES.h4, lineHeight: 22},

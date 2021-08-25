@@ -3,17 +3,17 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Button from './components/button'
 import TextField from "./components/textInput";
+import TextButton from "./components/textButton";
+import LoginScreen from "./screens/loginScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
 
-      <Button  type={"primary"} title={"Welcome"} onPress={()=>{
-          console.log("pressed")
-      }} />
 
-        <TextField placeholder={"Phone"} keyboardType={"phone-pad"} />
+
+<LoginScreen/>
+
       <StatusBar style="auto" />
     </View>
   );
