@@ -1517,10 +1517,10 @@
   resolved "https://registry.yarnpkg.com/@react-native-masked-view/masked-view/-/masked-view-0.2.4.tgz#305a548abd47dee494a38f90016432d3a6e4164c"
   integrity sha512-2Y9OXWHRutYmdyW+bNMaFTW8uTBpaaK20xdIFoVtqahEOO9++B+ut3CAWKPZcdRtb9ikG0LUKChGqMeocg0PGA==
 
-"@react-native-picker/picker@1.16.1":
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/@react-native-picker/picker/-/picker-1.16.1.tgz#cc5d05b0d651445afa519c67824d8af3e43fa10c"
-  integrity sha512-sk07ARwL0cMXwkXsqcxyprL/KiEVD0xRFXFqznTnZs1YXqwxEqz6GiGtq2vQlK64CzXDpHX8gw1QQz47abBY1Q==
+"@react-native-picker/picker@^1.16.7", "@react-native-picker/picker@^1.8.3":
+  version "1.16.7"
+  resolved "https://registry.yarnpkg.com/@react-native-picker/picker/-/picker-1.16.7.tgz#2c943572efcd21c218ee03f23ba1475544b24cf1"
+  integrity sha512-/QJxL4JniloFvdPDufQTiMQQbpucCQ0w7wvGhZQt0x3KVxvI1f/vzDO+669r/1yipcFZbSLcYIiQSMSpZtkqiQ==
 
 "@react-navigation/core@^6.0.1":
   version "6.0.1"
@@ -4835,6 +4835,14 @@ react-native-gesture-handler@~1.10.2:
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
     prop-types "^15.7.2"
+
+react-native-picker-select@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-picker-select/-/react-native-picker-select-8.0.4.tgz#3f7f1f42df69b06e7d2c10338288332a6c40fd10"
+  integrity sha512-orBjPIwBkV5oipyVw263YNMI56f6Kj3p/ejabZoCYYNSG3AiLVVhC2RqsxMgDA7IayyURAW+AlV+mDJyVqLBkg==
+  dependencies:
+    "@react-native-picker/picker" "^1.8.3"
+    lodash.isequal "^4.5.0"
 
 react-native-reanimated@^2.2.0:
   version "2.2.0"

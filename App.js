@@ -8,6 +8,7 @@ import SuccessScreen from "./screens/successScreen";
 import TotalAmountScreen from "./screens/totalAmountScreen";
 import DrawerNavigation from "./navigation/drawer";
 import Router from "./navigation/router";
+import HomeScreen from "./screens/homeScreen";
 
 export default function App() {
     return (
@@ -23,7 +24,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
-        // alignItems: 'center',
         justifyContent: 'center',
     },
 });

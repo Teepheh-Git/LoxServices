@@ -9,6 +9,7 @@ export const COLORS = {
     colonRed: "#E2574C",
     buttonRed: "#F93C26",
     green: "#27AC60",
+    blue: "#2C9AFF",
     indicatorBlue: "#6375A4",
     black: "#000000",
     textBlack: "#1C1C1C",

@@ -8,6 +8,7 @@ import DrawerItems from "../components/drawerItems";
 import SuccessScreen from "../screens/successScreen";
 import EndTaskScreen from "../screens/endTaskScreen";
 import {COLORS} from "../constants";
+import HomeScreen from "../screens/homeScreen";
 
 
 const Drawer = createDrawerNavigator();
@@ -18,18 +19,29 @@ const DrawerNavigation = () => {
 
     return (
         <Drawer.Navigator
-            screenOptions={{title: "LOX SERVICES"}}
+            screenOptions={{
+                title: "LOX SERVICES",
+                headerStyle: {
+                    shadowOpacity: 0, elevation: 0
+
+                }
+            }}
             drawerContent={props => <DrawerItems  {...props}/>}
-            initialRouteName={"Welcome"}>
+            initialRouteName={"homeScreen"}>
+            <Drawer.Screen name={"successScreen"} component={SuccessScreen}/>
             <Drawer.Screen
                 options={{
                     headerStyle: {
-                        backgroundColor: COLORS.black
+                        backgroundColor: COLORS.black,
+                        shadowOpacity: 0, elevation: 0,
                     },
+                    title: ''
                 }}
-                name={"successScreen"} component={SuccessScreen}/>
-            <Drawer.Screen name={"totalAmountScreen"} component={TotalAmountScreen}/>
-            <Drawer.Screen name={"endTaskScreen"} component={EndTaskScreen}/>
+                name={"homeScreen"} component={HomeScreen}/>
+            <Drawer.Screen
+
+
+                name={"totalAmountScreen"} component={TotalAmountScreen}/>
         </Drawer.Navigator>
 
     );
