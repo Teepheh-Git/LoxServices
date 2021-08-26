@@ -3,6 +3,7 @@ import {COLORS, SIZES, FONTS} from "../../constants";
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: COLORS.white,
         height: SIZES.H,
         width: SIZES.W,
         justifyContent: 'center',

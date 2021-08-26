@@ -5,10 +5,13 @@ import styles from "./styles"
 const SuccessScreen = () => {
     return (
         <View style={styles.container}>
+            <View style={styles.root}>
 
-            <Image style={styles.img} source={require('../../assets/icons/success.jpg')}/>
-            <Text style={styles.text}>ENDED SUCCESSFULLY</Text>
 
+                <Image style={styles.img} resizeMode={"contain"} source={require('../../assets/icons/check.png')}/>
+                <Text style={styles.text}>ENDED SUCCESSFULLY</Text>
+
+            </View>
 
         </View>
     );

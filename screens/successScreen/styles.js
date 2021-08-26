@@ -3,11 +3,23 @@ import {COLORS, SIZES, FONTS} from "../../constants";
 
 const styles = StyleSheet.create({
     container: {
-        width: SIZES.W * 0.90,
+        flex: 1,
+        width: SIZES.W,
+        height: SIZES.H,
         justifyContent: 'center',
-        alignItems: 'center',
-        bottom: 150
+        backgroundColor: COLORS.white,
 
+
+    },
+    root: {
+        bottom: 150,
+        alignItems: 'center',
+        justifyContent: 'center',
+
+    },
+    img: {
+        width: SIZES.W * 0.4,
+        height: SIZES.H * 0.2,
     },
     text: {
         top: 40,

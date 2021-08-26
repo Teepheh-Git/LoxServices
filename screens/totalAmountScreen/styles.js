@@ -7,6 +7,8 @@ const styles = StyleSheet.create({
         width: SIZES.W,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: COLORS.white,
+
     },
     root: {
         flexDirection: 'row'

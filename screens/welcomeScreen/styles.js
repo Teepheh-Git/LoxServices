@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
         flex: 1,
         width: SIZES.W,
         height: SIZES.H * 0.9,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: COLORS.white,
     },
     root: {
         width: SIZES.W,

@@ -4,10 +4,11 @@ import Button from "../../components/button";
 import styles from "./styles"
 import TextField from "../../components/textInput";
 import TextButton from "../../components/textButton";
+import {useNavigation} from "@react-navigation/native";
 
 const ResetPasswordScreen = () => {
 
-
+    const navigation = useNavigation()
     return (
         <View style={styles.container}>
 
@@ -19,7 +20,7 @@ const ResetPasswordScreen = () => {
                 overrideStyle={styles.resetButton}
                 style={styles.button}
                 onPress={() => {
-                    console.log("pressed")
+                    alert('Password Reset instruction Sent ')
                 }}/>
 
 
@@ -28,7 +29,8 @@ const ResetPasswordScreen = () => {
 
                 <TextButton activeOpacity={1} type={"primary"} title={"Don't have an account?   "}/>
                 <TextButton type={"secondary"} title={"  Sign Up"} onPress={() => {
-                    console.log("pressed")
+                    navigation.navigate('signUpScreen');
+
                 }}/>
             </View>
         </View>

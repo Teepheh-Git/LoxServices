@@ -6,9 +6,12 @@ import styles from "./styles"
 import {COLORS} from "../../constants";
 import Button from "../../components/button";
 import {slides} from "../../constants";
+import {useNavigation} from "@react-navigation/native";
 
 
 const WelcomeScreen = () => {
+
+    const navigation = useNavigation()
     return (
 
         <View style={styles.container}>
@@ -28,14 +31,14 @@ const WelcomeScreen = () => {
                 title={"SIGN UP"}
                 overrideStyle={styles.signUpButton}
                 onPress={() => {
-                    console.log("pressed")
+                    navigation.navigate('signUpScreen')
                 }}/>
             <Button
                 type={"secondary"}
                 title={"LOG IN"}
                 overrideStyle={styles.loginButton}
                 onPress={() => {
-                    console.log("pressed")
+                    navigation.navigate('loginScreen')
                 }}/>
 
         </View>

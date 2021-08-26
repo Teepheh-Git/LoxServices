@@ -4,18 +4,22 @@ import Button from "../../components/button";
 import styles from "./styles"
 import TextField from "../../components/textInput";
 import TextButton from "../../components/textButton";
+import {useNavigation} from "@react-navigation/native";
 
 const LoginScreen = () => {
+
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
             <Button
                 type={"primary"}
-                    title={"SIGN UP"}
-                    overrideStyle={styles.signUpButton}
+                title={"SIGN UP"}
+                overrideStyle={styles.signUpButton}
                 style={styles.button}
-                    onPress={() => {
-                console.log("pressed")
-            }}/>
+                onPress={() => {
+                    navigation.navigate('signUpScreen');
+                }}/>
 
             <Text style={styles.orText}>OR</Text>
 
@@ -27,10 +31,13 @@ const LoginScreen = () => {
                 title={"LOG IN"}
                 overrideStyle={styles.loginButton}
                 onPress={() => {
-                console.log("pressed")
-            }}/>
+                    navigation.navigate('drawerNavigation');
 
-            <TextButton type={"primary"} title={"Forgot password?"} onPress={()=>{ console.log("pressed")}}/>
+                }}/>
+
+            <TextButton type={"primary"} title={"Forgot password?"} onPress={() => {
+                navigation.navigate('resetPasswordScreen');
+            }}/>
 
         </View>
     );

@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
         width: SIZES.W,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: COLORS.white,
     },
     root: {
         width: SIZES.W * 0.90,

@@ -4,9 +4,11 @@ import Button from "../../components/button";
 import styles from "./styles"
 import TextField from "../../components/textInput";
 import TextButton from "../../components/textButton";
+import {useNavigation} from "@react-navigation/native";
 
 const SignUpScreen = () => {
 
+    const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
@@ -18,7 +20,7 @@ const SignUpScreen = () => {
                 overrideStyle={styles.signUpButton}
                 style={styles.button}
                 onPress={() => {
-                    console.log("pressed")
+                    navigation.navigate('loginScreen')
                 }}/>
 
             <Text style={styles.orText}>OR</Text>
@@ -32,7 +34,8 @@ const SignUpScreen = () => {
                 title={"SIGN UP"}
                 overrideStyle={styles.loginButton}
                 onPress={() => {
-                    console.log("pressed")
+                    navigation.navigate('loginScreen')
+                    alert("Sign Up Successful, Please Login")
                 }}/>
 
             <TextButton activeOpacity={1} type={"primary"} title={"By joining you agree to our"}/>
