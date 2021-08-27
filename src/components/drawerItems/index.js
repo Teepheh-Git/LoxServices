@@ -21,7 +21,7 @@ const DrawerItems = (props) => {
 
                 <View style={styles.container}>
                     <Pressable onPress={() => {
-                        navigation.navigate('successScreen')
+                        navigation.navigate('editProfileScreen')
                     }} style={styles.signOutContainer}>
                         <Text style={styles.text}>Edit profile</Text>
                     </Pressable>
@@ -34,7 +34,7 @@ const DrawerItems = (props) => {
                     </Pressable>
 
                     <Pressable onPress={() => {
-                        navigation.navigate('totalAmountScreen')
+                        navigation.navigate('checkLocationScreen')
                     }} style={styles.signOutContainer}>
                         <Text style={styles.text}>Check location</Text>
                     </Pressable>

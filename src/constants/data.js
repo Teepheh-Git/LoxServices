@@ -61,6 +61,8 @@ export const services = [
     },
 
 ]
+
+
 export const duration = [
     {
         key: 1,
@@ -87,5 +89,22 @@ export const duration = [
         value: '6-7Hrs',
         label: '6hrs-7hrs'
     }
+]
+export const cards = [
+    {
+        key: 1,
+        value: 'MASTERCARD',
+        label: 'MASTERCARD'
+    },
+    {
+        key: 2,
+        value: 'VISA',
+        label: 'VISA'
+    },
+    {
+        key: 3,
+        value: 'VERVE',
+        label: 'VERVE'
+    },
 ]
 

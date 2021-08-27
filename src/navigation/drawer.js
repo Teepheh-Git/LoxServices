@@ -9,6 +9,8 @@ import SuccessScreen from "../screens/successScreen";
 import EndTaskScreen from "../screens/endTaskScreen";
 import {COLORS} from "../constants";
 import HomeScreen from "../screens/homeScreen";
+import EditProfileScreen from "../screens/editProfileScreen";
+import CheckLocationScreen from "../screens/checkLocationScreen";
 
 
 const Drawer = createDrawerNavigator();
@@ -28,7 +30,7 @@ const DrawerNavigation = () => {
             }}
             drawerContent={props => <DrawerItems  {...props}/>}
             initialRouteName={"homeScreen"}>
-            <Drawer.Screen name={"successScreen"} component={SuccessScreen}/>
+            <Drawer.Screen name={"editProfileScreen"} component={EditProfileScreen}/>
             <Drawer.Screen
                 options={{
                     headerStyle: {
@@ -41,7 +43,7 @@ const DrawerNavigation = () => {
             <Drawer.Screen
 
 
-                name={"totalAmountScreen"} component={TotalAmountScreen}/>
+                name={"checkLocationScreen"} component={CheckLocationScreen}/>
         </Drawer.Navigator>
 
     );

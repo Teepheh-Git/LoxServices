@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     container:{
         width: SIZES.W,
         padding: SIZES.padding,
-        justifyContent:'center',
+        // justifyContent:'center',
         alignItems:'center',
     },
     textInput:{
