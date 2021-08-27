@@ -1,12 +1,6 @@
 import React from 'react';
-import {Image, StyleSheet, View} from "react-native";
-import WelcomeScreen from "../screens/welcomeScreen";
-import TotalAmountScreen from "../screens/totalAmountScreen";
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {NavigationContainer} from '@react-navigation/native';
 import DrawerItems from "../components/drawerItems";
-import SuccessScreen from "../screens/successScreen";
-import EndTaskScreen from "../screens/endTaskScreen";
 import {COLORS} from "../constants";
 import HomeScreen from "../screens/homeScreen";
 import EditProfileScreen from "../screens/editProfileScreen";
