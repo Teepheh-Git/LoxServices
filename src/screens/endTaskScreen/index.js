@@ -4,14 +4,18 @@ import styles from "./styles"
 import {AntDesign} from '@expo/vector-icons';
 import {COLORS} from "../../constants";
 import Button from "../../components/button";
+import {useNavigation} from "@react-navigation/native";
 
-const StartTaskScreen = () => {
+const EndTaskScreen = () => {
+
+
+    const navigation = useNavigation()
     return (
         <View style={styles.container}>
 
             <View style={styles.root}>
                 <AntDesign name="exclamationcircleo" size={120} color={COLORS.red}/>
-                <Text style={styles.text}>start Task?</Text>
+                <Text style={styles.text}>End Task?</Text>
 
             </View>
 
@@ -21,6 +25,7 @@ const StartTaskScreen = () => {
                     title={"NO"}
                     overrideStyle={styles.noButton}
                     onPress={() => {
+                        navigation.goBack()
                     }}/>
 
                 <Button
@@ -28,6 +33,8 @@ const StartTaskScreen = () => {
                     title={"YES"}
                     overrideStyle={styles.yesButton}
                     onPress={() => {
+
+                        navigation.navigate('successScreen')
                     }}/>
             </View>
 
@@ -35,4 +42,4 @@ const StartTaskScreen = () => {
     );
 };
 
-export default StartTaskScreen;
+export default EndTaskScreen;

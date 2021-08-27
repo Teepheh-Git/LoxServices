@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     inputIOS: {
-        backgroundColor: COLORS.lightGray,
+        backgroundColor: COLORS.gray2,
         borderColor: COLORS.gray,
         borderWidth: 1,
         height: 50,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     },
     inputAndroid: {
         color: COLORS.black,
-        backgroundColor: COLORS.lightGray,
+        backgroundColor: COLORS.gray2,
         borderColor: COLORS.gray,
         borderWidth: 1,
         height: 50,

@@ -14,7 +14,9 @@ export const COLORS = {
     black: "#000000",
     textBlack: "#1C1C1C",
     gray: "#A1ABB2",
-    lightGray: "#C4C4C429",
+    gray2: "rgba(210,210,210,0.18)",
+    gray3: "#999999",
+    lightGray: "#C4C4C4",
 
 };
 export const SIZES = {

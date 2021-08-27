@@ -5,13 +5,17 @@ import {services, duration} from "../../constants/data";
 import {Ionicons} from "@expo/vector-icons";
 import Button from "../../components/button";
 import styles from "./styles"
+import {useNavigation} from "@react-navigation/native";
 
 
 const HomeScreen = () => {
+
+    const navigation = useNavigation()
     return (
         <View style={styles.container}>
             <View style={styles.imageContainer}>
-                <Image resizeMode={'contain'} style={styles.image} source={require('../../assets/icons/banner.jpg')}/>
+                <Image resizeMode={'contain'} style={styles.image}
+                       source={require('../../../assets/icons/banner.jpg')}/>
             </View>
             <View style={styles.orderNowContainer}>
                 <Text style={styles.orderNow}>Order Now</Text>
@@ -69,6 +73,8 @@ const HomeScreen = () => {
             </View>
 
             <Button overrideStyle={styles.button} type="primary" title={"PROCEED"} onPress={() => {
+                navigation.navigate('startTaskScreen')
+
             }}/>
 
         </View>

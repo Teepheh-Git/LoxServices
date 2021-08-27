@@ -2,22 +2,18 @@ import React, {useEffect} from 'react';
 import {Text, View} from "react-native";
 import styles from "./styles"
 import Button from "../../components/button";
-
-const totalAmount = [
-    1000,
-    2000,
-    3000,
-]
+import {totalAmount} from '../../constants/data'
+import {useNavigation} from "@react-navigation/native";
 
 
 const TotalAmountScreen = () => {
 
+    const navigation = useNavigation()
 
     const showRandomNumber = (totalAmount) => {
 
         return totalAmount[Math.floor(Math.random() * totalAmount.length)]
     }
-
     return (
         <View style={styles.container}>
 
@@ -34,7 +30,7 @@ const TotalAmountScreen = () => {
                 overrideStyle={styles.closeButton}
                 style={styles.button}
                 onPress={() => {
-                    console.log("pressed")
+                    navigation.navigate('homeScreen')
                 }}/>
 
 

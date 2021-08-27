@@ -7,6 +7,11 @@ import {NavigationContainer} from "@react-navigation/native";
 import WelcomeScreen from "../screens/welcomeScreen";
 import ResetPasswordScreen from "../screens/resetPasswordScreen";
 import DrawerNavigation from "./drawer";
+import StartTaskScreen from "../screens/startTaskScreen";
+import TaskCountScreen from "../screens/taskCountScreen";
+import EndTaskScreen from "../screens/endTaskScreen";
+import SuccessScreen from "../screens/successScreen";
+import TotalAmountScreen from "../screens/totalAmountScreen";
 
 const Stack = createStackNavigator();
 
@@ -15,7 +20,10 @@ const Router = () => {
         <NavigationContainer>
 
             <Stack.Navigator
-                screenOptions={{title: "LOX SERVICES"}}>
+                screenOptions={{
+                    title: "LOX SERVICES",
+                    headerStyle: {shadowOpacity: 0, elevation: 0}
+                }}>
 
                 <Stack.Screen
                     options={{headerShown: false,}}
@@ -31,6 +39,13 @@ const Router = () => {
                     name={'drawerNavigation'}
                     component={DrawerNavigation}
                 />
+
+                <Stack.Screen name={'startTaskScreen'} component={StartTaskScreen}/>
+                <Stack.Screen name={'taskCountScreen'} component={TaskCountScreen}/>
+                <Stack.Screen name={'endTaskScreen'} component={EndTaskScreen}/>
+                <Stack.Screen name={'successScreen'} component={SuccessScreen}/>
+                <Stack.Screen name={'totalAmountScreen'} component={TotalAmountScreen}/>
+
 
             </Stack.Navigator>
         </NavigationContainer>
