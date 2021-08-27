@@ -5,41 +5,48 @@ import styles from "./styles"
 import TextField from "../../components/textInput";
 import TextButton from "../../components/textButton";
 import {useNavigation} from "@react-navigation/native";
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
+
 
 const LoginScreen = () => {
 
     const navigation = useNavigation();
 
     return (
-        <View style={styles.container}>
-            <Button
-                type={"primary"}
-                title={"SIGN UP"}
-                overrideStyle={styles.signUpButton}
-                style={styles.button}
-                onPress={() => {
-                    navigation.navigate('signUpScreen');
+        <KeyboardAwareScrollView>
+
+            <View style={styles.container}>
+                <Button
+                    type={"primary"}
+                    title={"SIGN UP"}
+                    overrideStyle={styles.signUpButton}
+                    style={styles.button}
+                    onPress={() => {
+                        navigation.navigate('signUpScreen');
+                    }}/>
+
+                <Text style={styles.orText}>OR</Text>
+
+                <TextField placeholder={"Phone"} keyboardType={"phone-pad"} maxLength={13}/>
+                <TextField placeholder={"Password"} keyboardType={"default"} secureTextEntry={true} maxLength={15}/>
+
+                <Button
+                    type={"primary"}
+                    title={"LOG IN"}
+                    overrideStyle={styles.loginButton}
+                    onPress={() => {
+                        navigation.navigate('drawerNavigation');
+
+                    }}/>
+
+                <TextButton type={"primary"} title={"Forgot password?"} onPress={() => {
+                    navigation.navigate('resetPasswordScreen');
                 }}/>
 
-            <Text style={styles.orText}>OR</Text>
+            </View>
 
-            <TextField placeholder={"Phone"} keyboardType={"phone-pad"} maxLength={13}/>
-            <TextField placeholder={"Password"} keyboardType={"default"} secureTextEntry={true} maxLength={15}/>
+        </KeyboardAwareScrollView>
 
-            <Button
-                type={"primary"}
-                title={"LOG IN"}
-                overrideStyle={styles.loginButton}
-                onPress={() => {
-                    navigation.navigate('drawerNavigation');
-
-                }}/>
-
-            <TextButton type={"primary"} title={"Forgot password?"} onPress={() => {
-                navigation.navigate('resetPasswordScreen');
-            }}/>
-
-        </View>
     );
 };
 

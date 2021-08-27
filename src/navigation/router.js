@@ -20,6 +20,7 @@ const Router = () => {
         <NavigationContainer>
 
             <Stack.Navigator
+                detachInactiveScreens={true}
                 screenOptions={{
                     title: "LOX SERVICES",
                     headerStyle: {shadowOpacity: 0, elevation: 0}
@@ -39,7 +40,6 @@ const Router = () => {
                     name={'drawerNavigation'}
                     component={DrawerNavigation}
                 />
-
                 <Stack.Screen name={'startTaskScreen'} component={StartTaskScreen}/>
                 <Stack.Screen name={'taskCountScreen'} component={TaskCountScreen}/>
                 <Stack.Screen name={'endTaskScreen'} component={EndTaskScreen}/>

@@ -1,19 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './styles'
 import {TextInput, View} from "react-native";
 import {COLORS} from "../../constants";
 
-const TextField = (prop) => {
 
+const TextField = (prop) => {
 
     const {placeholder, keyboardType, ...props} = prop
 
-    const [focus, setFocus]=useState(true)
-
-
     return (
         <View style={styles.container}>
-
             <TextInput
                 placeholder={placeholder}
                 placeholderTextColor={COLORS.gray}
@@ -22,8 +18,6 @@ const TextField = (prop) => {
                 style={styles.textInput}
                 {...props}
             />
-
-
         </View>
     );
 };
