@@ -26,6 +26,18 @@ export const totalAmount = [
     4000,
     5000
 ]
+export const location = [
+    'LEKKI AVE',
+    'AJAH RD',
+    'OPEBI ALLEN',
+    'IKEJA RD',
+    'OJOTA EXPRESS'
+]
+export const places = [
+    'Jack Allen',
+    'Mary Miami',
+    'John California',
+]
 
 
 export const services = [

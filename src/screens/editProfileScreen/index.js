@@ -80,7 +80,7 @@ const EditProfileScreen = () => {
                     mode="date"
                     placeholder="select date"
                     format="DD MMM YYYY"
-                    useNativeDate={false}
+                    useNativeDate={true}
                     minDate="01-01-1970"
                     maxDate="01-01-2023"
                     confirmBtnText="Confirm"
