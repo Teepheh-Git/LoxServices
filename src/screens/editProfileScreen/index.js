@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {Image, ImageBackground, Platform, Pressable, Text, View} from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import TextField from "../../components/textInput";
-import DatePicker from 'react-native-datepicker';
 import RNPickerSelect from "react-native-picker-select";
 import {cards, dates} from "../../constants/data";
 import {Entypo, EvilIcons, Feather} from "@expo/vector-icons";

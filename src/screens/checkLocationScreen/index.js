@@ -22,7 +22,6 @@ const CheckLocationScreen = () => {
         return location[Math.floor(Math.random() * location.length)]
     }
 
-
     return (
         <View style={styles.container}>
 
