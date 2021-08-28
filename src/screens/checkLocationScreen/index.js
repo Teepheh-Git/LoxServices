@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pressable, Text, View} from "react-native";
+import {Image, Pressable, Text, View} from "react-native";
 import MapView from "react-native-maps";
 import {Entypo, Feather} from "@expo/vector-icons";
 import Button from "../../components/button";
@@ -36,12 +36,17 @@ const CheckLocationScreen = () => {
             <View style={styles.box}>
 
 
-                <View style={styles.mapContainer}>
-                    <MapView style={styles.map}
-                             provider={MapView.PROVIDER_GOOGLE}>
+                <Pressable onPress={() => alert('map feature coming soon')} style={styles.mapContainer}>
+                    {/*<MapView style={styles.map}*/}
+                    {/*         provider={MapView.PROVIDER_GOOGLE}>*/}
+                    {/*</MapView>*/}
 
-                    </MapView>
-                </View>
+                    <Image style={{width: '100%', height: 150}} source={require('../../../assets/icons/map.png')}>
+
+
+                    </Image>
+
+                </Pressable>
 
                 <Pressable style={styles.location} onPress={() => alert('Feature coming soon')}>
                     <Entypo name="dot-single" size={34} color="#5A6CB5"/>
