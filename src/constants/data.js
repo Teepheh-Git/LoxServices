@@ -120,3 +120,21 @@ export const cards = [
     },
 ]
 
+export const dates = [
+    {
+        key: 1,
+        value: 'SELECT DATE',
+        label: 'SELECT DATE'
+    },
+    {
+        key: 2,
+        value: 'SELECT DATE',
+        label: 'SELECT DATE'
+    },
+    {
+        key: 3,
+        value: 'SELECT DATE',
+        label: 'SELECT DATE'
+    },
+]
+

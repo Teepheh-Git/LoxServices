@@ -4,15 +4,13 @@ import * as ImagePicker from "expo-image-picker";
 import TextField from "../../components/textInput";
 import DatePicker from 'react-native-datepicker';
 import RNPickerSelect from "react-native-picker-select";
-import {cards} from "../../constants/data";
-import {Entypo, Feather} from "@expo/vector-icons";
+import {cards, dates} from "../../constants/data";
+import {Entypo, EvilIcons, Feather} from "@expo/vector-icons";
 import Button from "../../components/button";
 import styles from "./styles"
 
 
 const EditProfileScreen = () => {
-
-    const [date, setDate] = useState('09-07-2001');
 
 
     const [image, setImage] = useState(null);
@@ -73,36 +71,20 @@ const EditProfileScreen = () => {
             </View>
 
             <View style={styles.textInputView}>
+                <View style={styles.cardContainer}>
+                    <EvilIcons name="calendar" size={24} color="black"/>
+                </View>
 
-                <DatePicker
-                    style={styles.datePickerStyle}
-                    date={date}
-                    mode="date"
-                    placeholder="select date"
-                    format="DD MMM YYYY"
-                    useNativeDate={true}
-                    minDate="01-01-1970"
-                    maxDate="01-01-2023"
-                    confirmBtnText="Confirm"
-                    cancelBtnText="Cancel"
-                    iconSource={require('../../../assets/icons/calender.png')}
-                    customStyles={{
-                        dateIcon: {
-                            position: 'absolute',
-                            left: 15,
-                            top: 10,
-                            marginLeft: 5,
-                            width: 18,
-                            height: 18
-                        },
-                        dateInput: {
-                            alignItems: 'right',
-                            paddingLeft: 50,
-                            height: 50
-                        },
+                <RNPickerSelect
+                    onValueChange={(value) => console.log(value)}
+                    useNativeAndroidPickerStyle={false}
+                    items={dates}
+                    style={{
+                        ...styles,
                     }}
-                    onDateChange={(date) => {
-                        setDate(date);
+                    placeholder={{
+                        label: '23 Jun 2003',
+                        value: null,
                     }}
                 />
 
@@ -118,7 +100,7 @@ const EditProfileScreen = () => {
                     style={{
                         ...styles,
                         iconContainer: {
-                            top: 35,
+                            top: 15,
                             right: 12,
                         },
                     }}

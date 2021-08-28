@@ -15,7 +15,6 @@ const DrawerNavigation = () => {
 
     return (
         <Drawer.Navigator
-            detachInactiveScreens={true}
             screenOptions={{
                 title: "LOX SERVICES",
                 headerStyle: {

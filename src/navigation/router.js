@@ -20,7 +20,6 @@ const Router = () => {
         <NavigationContainer>
 
             <Stack.Navigator
-                detachInactiveScreens={true}
                 screenOptions={{
                     title: "LOX SERVICES",
                     headerStyle: {shadowOpacity: 0, elevation: 0}

@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
         top: 11,
         flexDirection: 'row'
     }, taskTitleContainer2: {
-        top: 35,
+        top: 38,
         left: 51,
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     taskTitle: {
         fontSize: 13,
@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
         height: 50,
         padding: 10,
         paddingLeft: 40,
-        marginVertical: 20,
         fontSize: SIZES.body,
 
     },
@@ -101,12 +100,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center',
         paddingLeft: 40,
-        marginVertical: 20,
         fontSize: SIZES.body,
     },
     cardContainer: {
         width: SIZES.W * 0.9,
-        top: 58,
+        top: 35,
         left: 11,
     },
     button: {
@@ -115,7 +113,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'black',
         alignItems: 'center',
         justifyContent: 'center',
-        marginVertical: 30
+        marginVertical: 70
     }
 })
 

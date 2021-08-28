@@ -38,7 +38,10 @@ const CheckLocationScreen = () => {
 
 
                 <View style={styles.mapContainer}>
-                    <MapView style={styles.map}/>
+                    <MapView style={styles.map}
+                             provider={MapView.PROVIDER_GOOGLE}>
+
+                    </MapView>
                 </View>
 
                 <Pressable style={styles.location} onPress={() => alert('Feature coming soon')}>
